@@ -14,11 +14,13 @@ We will cover set up following EMR applications:
 1. [Hbase](https://github.com/Anubhav02/EMR-Observability/tree/main/hbase_monitoring)
 2. [Spark batch and streaming](https://github.com/Anubhav02/EMR-Observability/tree/main/spark_monitoring)
 
-You can also extend the same model to achieve presto metrics as well. 
 
-### Considerations
+
+### Considerations and Limitations
 1. These scripts are for training purpose only and not ready for production deployments. Please perform thorough testing. 
 2. They have been tested on latest EMR version 6.4.0. 
+3. You can set up alerting as well on Amazon Managed Prometheus. Refer [this] (https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alert-manager.html) 
+4. You can extend this solution to achieve presto metrics as well. 
 
 
 
