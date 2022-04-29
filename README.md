@@ -10,7 +10,7 @@ With Amazon Managed Service for Prometheus, you use the same open-source Prometh
 
 Amazon Managed Grafana is a fully managed service for open source Grafana developed in collaboration with Grafana Labs. Grafana is a popular open source analytics platform that enables you to query, visualize, alert on and understand your metrics no matter where they are stored. Check [Amazon Managed Grafana pricing](https://aws.amazon.com/grafana/pricing/) for more details. 
 
-We will cover set up following EMR applications:
+We will cover set up for following EMR applications:
 1. [Hbase](https://github.com/Anubhav02/EMR-Observability/tree/main/hbase_monitoring)
 2. [Spark batch and streaming](https://github.com/Anubhav02/EMR-Observability/tree/main/spark_monitoring)
 
