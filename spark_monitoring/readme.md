@@ -53,13 +53,13 @@ Note: You do not need to create a new workspace if you already have one created.
 1. First, lets change /etc/spark/conf/metrics.properties file on master node to emit spark jmx metrics. Uncomment following line `*.sink.jmx.class=org.apache.spark.metrics.sink.JmxSink` in the file
 2. Run below sample job 
 
-`
+```
 spark-submit --master yarn --deploy-mode cluster \
 --conf spark.metrics.namespace=spark --conf spark.metrics.appStatusSource.enabled=true \
 --conf "spark.driver.extraJavaOptions=-javaagent:/etc/prometheus/jmx_prometheus_javaagent-0.13.0.jar=7006:/etc/hadoop/conf/spark_jmx_config.yaml" \
 --conf "spark.executor.extraJavaOptions=-javaagent:/etc/prometheus/jmx_prometheus_javaagent-0.13.0.jar=7007:/etc/hadoop/conf/spark_jmx_config.yaml" \
 --class org.apache.spark.examples.SparkPi /usr/lib/spark/examples/jars/spark-examples.jar 10000
-`
+```
 
 #### Step:6 Create graphs on important metrics
 1. For detailed set of spark metrics that you can plot on Amazon Managed Grafana refer [this](https://spark.apache.org/docs/latest/monitoring.html#metrics)
