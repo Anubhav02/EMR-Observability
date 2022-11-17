@@ -737,7 +737,7 @@
         "EMRStack": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-                "TemplateURL": "https://anuawas-3481.s3.amazonaws.com/code_base/spark/emr_cluster_prometheus.json",
+                "TemplateURL": "https://<S3_bucket_endpoint>/spark/emr_cluster_prometheus.json",
                 "Parameters": {
                     "EMRClusterName": {
                         "Ref": "EMRClusterName"
@@ -779,7 +779,7 @@
         "IAMStack": {
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
-                "TemplateURL": "https://anuawas-3481.s3.amazonaws.com/code_base/spark/IamForPrometheus.json"
+                "TemplateURL": "https://<S3_bucket_endpoint>/spark/IamForPrometheus.json"
             }
         },
         "EMRMasterSecurityGroup": {
