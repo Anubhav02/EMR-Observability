@@ -58,9 +58,9 @@
 		},
 		"EMRReleaseLabel": {
 			"Description": "EMR Version",
-			"AllowedValues": ["emr-5.34.0", "emr-5.35.1","emr-6.0.0","emr-6.1.0","emr-6.2.0","emr-6.3.0","emr-6.4.0"],
+			"AllowedValues": ["emr-6.3.0","emr-6.4.0","emr-6.5.0","emr-6.6.0","emr-6.7.0","emr-6.8.0","emr-6.9.0"],
 			"Type": "String",
-			"Default": "emr-6.4.0"
+			"Default": "emr-6.8.0"
 		},
 		"EMRMasterAdditionalSGId": {
 			"Description": "Security Group Id for the additional master security group.",
